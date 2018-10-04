@@ -1,0 +1,31 @@
+name: azure-compliance-profile
+title: InSpec Profile
+maintainer: Richard Diphoorn
+copyright: Richard Diphoorn
+copyright_email: rdiphoorn@outlook.com
+license: Apache-2.0
+summary: Azure Compliance Profile
+version: 0.1.0
+depends:
+  - name: inspec-azure
+    url: https://github.com/inspec/inspec-azure/archive/1.2.0.tar.gz
+attributes:
+  - name: location
+    type: string
+    default: northeurope
+  - name: network_resource_group
+    type: string
+    default: TestNetwork
+  - name: vnet_name
+    type: string
+    default: TestNetwork
+  - name: subnet_name
+    type: string
+    default: TestSubnet
+  - name: subnet_id
+    type: string
+  - name: subnet_address_prefix
+    type: string
+    default: 10.10.10.0/24
+  - name: subnet_nsg
+    default: TestNsg
