@@ -1,0 +1,8 @@
+---
+lockfile_version: 1
+depends:
+- name: inspec-azure
+  resolved_source:
+    url: https://github.com/inspec/inspec-azure/archive/1.2.0.tar.gz
+    sha256: c3d77bf20c7b0e96645f9c8f2990a91302440b4b9a1e16a86936c64b032e2073
+  version_constraints: []
